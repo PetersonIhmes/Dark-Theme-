@@ -1,0 +1,29 @@
+<DOCTYPE! html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Dark Mode</title>
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="conteiner">
+    <div class="btn"></div>
+  </div>
+  
+  <!-- Javascript -->
+  <script>
+    const btn = document.querySelector(".btn");
+    const conteiner = document.querySelector(".conteiner")
+    btn.onclick = function () {
+      this.classList.toggle("active")
+      conteiner.classList.toggle("active")
+    }
+  </script>
+</body>
+</html>
